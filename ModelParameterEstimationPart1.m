@@ -27,7 +27,7 @@ a=1;
 L1=X1/6.28/50;
 L2=X2/6.28/50;
 
-alpha=0.0001;
+gammma=0.0001;
 
 VV1=0:1:999;
 VV2=0:1:999;
@@ -54,10 +54,10 @@ for Iteration=1:1000
         if Indice_Pre2<1
             Indice_Pre2=Indice_Pre2+1000;
         end
-        VV1(Indice)=(1-alpha)*VV1(Indice_Pre)+TBase*V1(Indice);
-        VV2(Indice)=(1-alpha)*VV2(Indice_Pre)+TBase*V2(Indice);
-        II1(Indice)=(1-alpha)*II1(Indice_Pre)+TBase*I1(Indice);
-        II2(Indice)=(1-alpha)*II2(Indice_Pre)+TBase*I2(Indice);
+        VV1(Indice)=(1-gammma)*VV1(Indice_Pre)+TBase*V1(Indice);
+        VV2(Indice)=(1-gammma)*VV2(Indice_Pre)+TBase*V2(Indice);
+        II1(Indice)=(1-gammma)*II1(Indice_Pre)+TBase*I1(Indice);
+        II2(Indice)=(1-gammma)*II2(Indice_Pre)+TBase*I2(Indice);
         
         
         
